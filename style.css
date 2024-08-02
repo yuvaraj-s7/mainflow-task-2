@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: 70px;
+    background-color: rgb(217, 217, 217);
+}
+
+.nav-items{
+    font-family:playfair display;
+    font-size: 20px;
+    float: right;
+    width: 500px;
+    height:70px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    font-family:playfair display;
+    float: right; 
+}
+
+.section p{
+    margin-top: 250px;
+    margin-right: 50px;
+    font-family:playfair display;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 0px 0px 1px #fff;
+    color: rgb(0, 0, 0);
+    float: right;
+}
+
+.nav-items a{
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items a:hover {
+    color: brown;
+    font-size: 23px;
+}
+
+.logo{
+    float: left;
+    margin-left: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.logo p{
+    color: rgb(62, 62, 62);
+    font-size: 60px;
+}
+
+span{
+    font-size: 30px;
+    font-family:playfair display;
+    color: rgb(62, 62, 62);
+}
+
+ul{
+    list-style: none;
+}
+
+.logo-img{
+    width: 218px;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.dropdown{
+    padding: 5px;
+    width: 80px;
+    position: relative;
+    transition: 1s;
+}
+
+.dropitems{
+    padding:20px 10px 10px 10px;
+    background-color: rgb(217, 217, 217);
+    display: none;
+    transition: 1s;
+    width: 100px;
+    position: absolute;
+}
+
+.dropdown:hover .dropitems{
+    display: block;
+}
+@media screen and (max-width:567px) {
+.nav-items{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-color: rgb(217, 217, 217);
+}
+.nav{
+    margin-bottom: 0;
+}
+.section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.section p{
+    margin-top: 50px;
+}
+.dropitems{
+    position: absolute;
+    gap: 30px;
+    left: 80px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+}
